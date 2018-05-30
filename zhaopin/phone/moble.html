@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动端报名</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <link href="../favicon.ico" rel="shortcut icon" />
+</head>
+<body><div class="container">
+    <div class="content">
+    <form id="form" action="" class="form-horizontal" autocomplete="off">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">姓名：</label>
+            <div id="div" class="col-sm-10">
+                <span style="float: left;color: #ff003f;margin-top: 8px;margin-left: -10px;font-size: .7rem">*</span><input name="name" style="color:#fff" onblur="reg_name(this.value);" required type="text" class="form-control" id="inputEmail3" placeholder="请输入姓名">
+
+                <span id="t" style="color:#ff003f"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label"> 职务：</label>
+            <span style="float: left;color: #ff003f;margin-top: 8px;margin-left: -10px;font-size: .7rem">*</span><select class="col-sm-10">
+                <option value="1" class="s">-请选择要报名的职位-</option>
+                <option value="1" class="s">实习生或兼职</option>
+                <option value="2" class="s">舆情分析师</option>
+                <option value="3" class="s">政府治理研究员</option>
+                <option value="4" class="s">新媒体编辑</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">电话：</label>
+            <div id="div" class="col-sm-10">
+                <span style="float: left;color: #ff003f;margin-top: 8px;margin-left: -10px;font-size: .7rem">*</span><input style="color:#fff" name="phone" onblur="reg_phone(this.value);" required type="text" class="form-control" id="inputPassword3" placeholder="请输入联系方式">
+                <span id="e" style="color:#ff003f"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">邮箱：</label>
+            <div id="div" class="col-sm-10">
+                <input style="color:#fff; name="email" onblur="reg_email(this.value);" type="email" class="form-control" id="inputPassword3" placeholder="请输入邮箱">
+                <span id="r" style="color:#ff003f"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div id="div" class="col-sm-offset-2 col-sm-10">
+                <button id="but" type="submit" class="btn btn-primary btn-lg" style="width:3rem;height:.8rem;margin-top: .3rem;margin-bottom: .4rem;margin-left: 1.2rem;font-size: .3rem">提交</button>
+            </div>
+        </div>
+    </form>
+    <h1 style="color: red;line-height: 15px"><span style="float: left;color: #ff003f;font-size: .7rem;margin: .08rem  0  .5rem 3.1rem">*</span>号表示为必填项</h1>
+    </div>
+</div>
+</body>
+<style>
+    .s{
+        color: #000;
+    }
+    #r,#y{
+        margin-left: .3rem;
+    }
+    html{
+        font-size: 100px!important;
+    }
+    *{
+        margin: 0;
+        padding:0;
+        list-style: none;
+    }
+    .container{
+        width: 100%;
+        height: 17.43rem;
+        background-image: url("../pic.jpg");
+        background-size: 100% 100%;
+    }
+    #form{
+        margin-top: .6rem;
+        margin-left: .1rem;
+    }
+    .content{
+        width: 9rem;
+        min-height: 6rem;
+        border-radius: .2rem;
+        color: #000;
+        font-weight: 800;
+        font-size: .15rem;
+        position: absolute;
+        top:5rem;
+        left:0;
+        right:0;
+        margin: auto;
+    }
+    .content img{
+        display: block;
+        margin:.2rem auto;
+        padding: .75rem 0 .2rem 0;
+    }
+    .form-group input{
+        width: 94%;
+        background: rgba(255, 255, 255, 0);
+        border: 2px solid #000;
+        height: .76rem;
+        font-size: .3rem;
+        margin-left: .3rem;
+    }
+    .form-group select{
+        width: 71%;
+        background: rgba(255, 255, 255, 0);
+        border: 2px solid #000;
+        height: .76rem;
+        font-size: .3rem;
+        margin-left: .3rem;
+    }
+    .form-group{
+        margin: .2rem!important;
+        font-size: .3rem;
+    }
+    #form label{
+        width: 1.5rem;
+        height: .8rem;
+        font-size: .4rem;
+    }
+    #div{
+        width: 79.333333% !important;
+        background: rgba(255, 255, 255, 0);
+    }
+</style>
+<script src="../bootstrap-3.3.7-dist/js/jquery.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/join.js"></script>
+<!--<script src="js.js"></script>-->
+</html>
